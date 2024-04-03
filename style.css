@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(240, 128, 128);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size:x-large;
+    font-style: normal ;
+    justify-content: center;
+}
+nav img{
+    width: 30px;
+    height:auto;
+    vertical-align: middle;
+}
+nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 50px; /* Adjust margin for spacing between links */
+}
+
+nav a:first-child {
+    margin-left: 10; /* Remove left margin for the first link */
+}
+
+.container {
+    display: flex;
+    padding: 0px;
+    max-width: 2000px;
+    height: 90vh;
+}
+.text-section, .image-section {
+    flex: 1;
+
+}
+.text-section {
+    background-color: lightgoldenrodyellow;
+    padding: 90px;
+    text-align: justify;
+    font-size: x-large;
+    font-style:arial;
+    background-image: linear-gradient(45deg, #ffd90071, #ffe0e6);
+    max-width: 200%;
+
+}
+.image-section {
+    background-color: #e8e8e8;
+    flex:1;
+    padding: 0px;
+
+}
+.image-section img {
+    height: 90vh;
+    max-width: 100%;
+
+}
+.text-section button{
+    background-color: lightcoral;
+    font-size: small;
+    padding: 5px 60px;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+}
+.text-section h1,.text-section p{
+    margin-bottom: 100px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.text-section h1{
+    letter-spacing: 15px;
+    margin-top: 20px;
+}
+.text-section p{
+    padding: 0px 5px;
+}
+@media only screen and (max-width:600px){
+    .text-section,.image-section{
+        display: flex;
+        flex-wrap: wrap;
+        width:10%;
+        max-width: 100%;
+    height:89.8vh;
+    }.text-section {
+        width: 10%;
+        height: 93vh;
+        max-width: 200%;
+        padding: 15px;
+        font-size: smaller;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-section p{
+        padding: 30px;
+        margin-top: 10px;
+    }
+    .text-section h1{
+        padding: 15px;
+        margin: 0 ;
+        white-space: nowrap;
+        font-size: xx-small;
+        letter-spacing: 5px;
+    }
+    .image-section{
+        width: 50%;
+        display: flex;
+        float: left;
+        flex-wrap: wrap;
+
+    }
+    .image-section img {
+        height: 96vh;
+        width: 100%;
+
+
+
+    }
+    nav{
+        padding:1px;
+        margin: 0 ;
+        white-space: nowrap;
+        font-size: xx-small;
+}
+nav a{
+    margin: 5px;
+}
+nav img{
+    width: 10px;
+    height:auto;
+    vertical-align: middle;
+    padding: 10px;
+}
+.text-section button{
+    font-size: small;
+    padding: 2px 40px;
+    border: none;
+    cursor: pointer;
+}
+
+
+}
